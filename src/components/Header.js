@@ -9,7 +9,7 @@ function Header() {
         <Link to="/">Home</Link>
         <Link to="/create">Buy</Link>
         <Link to="/community">Community</Link>
-        <Link to="/tokenomics">Tokenomics</Link> {/* Add link to Tokenomics page */}
+        <Link to="/tokenomics">Tokenomics</Link> 
       </nav>
     </header>
   );

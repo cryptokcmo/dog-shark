@@ -1,20 +1,47 @@
-/* src/pages/HomePage.css */
 .HomePage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Full viewport height */
   text-align: center;
-  background-color: #f0f0f0; /* Optional: background color for better contrast */
+  padding: 20px;
+  background-image: url('../images/shark-dog.jpg'); /* Background image */
+  background-size: 1in 1in; /* Tile size */
+  background-repeat: repeat; /* Repeat the background */
+  background-position: center;
+  position: relative; /* Required for positioning the overlay image */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.hero-image img {
-  max-width: 100%;
+.hero-image {
+  position: relative;
+  z-index: 1;
+}
+
+.shark-dog-image {
+  max-width: 100%; /* Ensure the image is responsive */
+  width: 50%; /* Default width for larger screens */
   height: auto;
-  border-radius: 10px; /* Optional: rounded corners */
+  border-radius: 10px; /* Optional: add some border radius for styling */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Optional: add some shadow */
+}
+
+@media (max-width: 768px) {
+  .shark-dog-image {
+    width: 70%; /* Smaller width for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .shark-dog-image {
+    width: 90%; /* Even smaller width for phones */
+  }
 }
 
 .HomePage h1 {
+  font-size: 2.5em;
   margin-top: 20px;
+  color: #61dafb; /* Theme color */
+  position: relative;
+  z-index: 1;
 }

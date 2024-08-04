@@ -1,8 +1,7 @@
-// src/pages/HomePage.js
 import React from 'react';
 import { motion } from 'framer-motion';
 import './HomePage.css';
-import sharkDogImage from '../image/shark-dog.jpg'; // Corrected import path
+import sharkDogImage from '../images/shark-dog.jpg'; // Import the image
 
 function HomePage() {
   return (
@@ -13,7 +12,12 @@ function HomePage() {
         animate={{ scale: [1, 1.2, 1] }}
         transition={{ duration: 2, repeat: Infinity, repeatType: 'loop' }}
       >
-        <img src={sharkDogImage} alt="Dog Shark" />
+        <img
+          src={sharkDogImage}
+          alt="Dog Shark in a costume"
+          className="shark-dog-image"
+          aria-label="Image of a dog in a shark costume" // ARIA label for screen readers
+        />
       </motion.div>
       <motion.h1
         initial={{ y: -50, opacity: 0 }}

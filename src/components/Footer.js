@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="Footer">
+    <footer>
       <p>&copy; 2024 Dog Shark. All rights reserved.</p>
     </footer>
   );

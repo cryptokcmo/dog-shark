@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import CreateMemePage from './pages/Buy';
 import CommunityPage from './pages/Community';
-import TokenomicsPage from './pages/TokenomicsPage'; // Import the new page
+import TokenomicsPage from './pages/TokenomicsPage';
 import './App.css';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreateMemePage />} />
         <Route path="/community" element={<CommunityPage />} />
-        <Route path="/tokenomics" element={<TokenomicsPage />} /> {/* Add the new route */}
+        <Route path="/tokenomics" element={<TokenomicsPage />} /> 
       </Routes>
       <Footer />
     </Router>
