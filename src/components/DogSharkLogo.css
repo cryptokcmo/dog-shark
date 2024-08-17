@@ -1,0 +1,14 @@
+/* src/components/DogSharkLogo.css */
+.DogSharkLogo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .head {
+    fill: #00bfff;
+  }
+  
+  .fin {
+    fill: #ff6347;
+  }
+  

@@ -1,0 +1,47 @@
+/* src/pages/TokenomicsPage.css */
+.TokenomicsPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #004d80; /* Consistent darker blue background */
+  padding: 20px;
+  text-align: center;
+}
+
+.tokenomics-box {
+  background-color: #ffffff;
+  border: 2px solid #61dafb; /* Themed border color */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Increased padding for larger box */
+  max-width: 800px;
+  width: 80%; /* Responsive width adjustment */
+  animation: fadeIn 1s ease-in-out 0.5s both; /* Added fade-in animation */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.TokenomicsPage h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #61dafb; /* Theme color */
+}
+
+.tokenomics-content {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.tokenomics-content h2 {
+  font-size: 2em;
+  margin: 15px 0;
+  color: #282c34; /* Dark color for contrast */
+}
+
+.tokenomics-content p {
+  margin: 0 0 20px;
+}

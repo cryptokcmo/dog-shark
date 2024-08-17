@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  background-color: #61dafb;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Or any other necessary styles */
+  /* background: linear-gradient(135deg, #FFD700, #FF6347, #FFFFFF); This line should be removed or commented out */
+}

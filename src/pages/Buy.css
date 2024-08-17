@@ -1,0 +1,66 @@
+/* src/pages/Buy.css */
+.Buy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #004d80; /* Updated to darker blue background */
+  color: #282c34;
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 40px;
+  border: 2px solid #61dafb;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out 0.5s both; /* Added for consistent fading effect */
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: #282c34;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: #282c34;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #61dafb;
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #282c34;
+  color: #61dafb;
+  transform: scale(1.05);
+}
+
+.cta-button:focus {
+  outline: 2px solid #61dafb;
+  outline-offset: 2px;
+}
