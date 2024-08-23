@@ -9,8 +9,8 @@ function HomePage() {
       <motion.div
         className="hero-image"
         initial={{ scale: 1 }}
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{ duration: 2, repeat: Infinity, repeatType: 'loop' }}
+        animate={{ scale: [1, 0.2, 1] }}
+        transition={{ duration: 2 }} // No repeat, single animation
       >
         <img
           src={sharkDogImage}
@@ -23,7 +23,7 @@ function HomePage() {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        whileHover={{ scale: 1.1, color: '#FF6347' }} // Example hover effect
+        whileHover={{ scale: 1.1, color: '#FFFFFF' }} // Example hover effect
       >
         Welcome to Dog Shark!
       </motion.h1>
