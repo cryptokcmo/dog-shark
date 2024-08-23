@@ -22,16 +22,16 @@ function Header() {
           </span>
         </a>
 
-        <a
+        <button
           id="btnHamburger"
-          href="javascript:void(0);"  // Updated to avoid ESLint errors
           className="header__toggle hide-for-desktop"
           onClick={toggleMenu}
+          aria-label="Toggle menu"
         >
           <span></span>
           <span></span>
           <span></span>
-        </a>
+        </button>
 
         <div className="header__links hide-for-mobile">
           <Link to="/" className="nav-link active">
