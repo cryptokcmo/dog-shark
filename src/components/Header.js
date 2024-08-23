@@ -17,7 +17,6 @@ function Header() {
     <header className={`header ${menuOpen ? 'open' : ''}`}>
       <nav className="container container--pall flex flex-jc-sb flex-ai-c">
         <a href="/" className="header__logo">
-          
           <span className="logo-text">
             <span>Dog-Shark</span>
           </span>
@@ -25,7 +24,7 @@ function Header() {
 
         <a
           id="btnHamburger"
-          href="#"
+          href="javascript:void(0);"  // Updated to avoid ESLint errors
           className="header__toggle hide-for-desktop"
           onClick={toggleMenu}
         >
